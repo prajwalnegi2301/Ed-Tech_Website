@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech - Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://kit.fontawesome.com/f2493fc8d5.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <label  class="logo">Dashboard</label>
+        
+        <ul class="nav-items">
+            <li class="nav-item"><a href="#user">My Profile</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#courses">Courses</a></li>
+            <li class="nav-item"><a href="#user-profile">Achievements</a></li>
+        </ul>
+    </div>
+
+    <div id="welcome" class="welcome"><h2 id="welcome-txt">Welcome!</h2></div>
+
+    <div class="user">
+   
+        <div class="charts">
+            <canvas class="chart" id="hoursChart"></canvas>
+            <canvas class="chart" id="quesChart"></canvas>
+        </div>
+        
+        <div id="user-profile" class="user-profile">
+
+            <div class="badges">
+
+                <h3 class="heading">Badges</h3>
+
+                <div class="badge-imgs">
+                    <img class="badge" src="images/badge1.png" alt="">
+                    <img class="badge" src="images/badge2.png" alt="">
+                    <img class="badge" src="images/badge3.png" alt="">
+                    <img class="badge" src="images/badge4.png" alt="">
+                    <img class="badge" src="images/badge5.png" alt="">
+                    <img class="badge" src="images/badge6.png" alt="">
+                </div>
+            </div>
+
+            <div class="past-courses">
+
+                <h3 class="heading">Past Courses</h3>
+
+                <div class="past-course-imgs">
+                    <img class="past-course" src="images/cpp.png" alt="">
+                    <img class="past-course" src="images/python.png" alt="">
+                    <img class="past-course" src="images/c.png" alt="">
+                    <img class="past-course" src="images/js.png" alt="">
+                    <img class="past-course" src="images/css.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="projects" class="projects">
+
+        <h2 class="heading">Your Projects</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="images/scrapy.png" alt="image">
+                <h4 class="title">Lorem, ipsum</h4>
+                <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium rerum necessitatibus aliquam. Ex, enim.</p>
+                <a href="https://www.github.com/" class="btn">Open repository</a>
+            </div>
+            <div class="card">
+                <img src="images/scrapy.png" alt="image">
+                <h4 class="title">Lorem, ipsum</h4>
+                <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium rerum necessitatibus aliquam. Ex, enim.</p>
+                <a href="https://www.github.com/" class="btn">Open repository</a>
+            </div>
+            <div class="card">
+                <img src="images/scrapy.png" alt="image">
+                <h4 class="title">Lorem, ipsum</h4>
+                <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium rerum necessitatibus aliquam. Ex, enim.</p>
+                <a href="https://www.github.com/" class="btn">Open repository</a>
+            </div>
+            <div class="card">
+                <img src="images/scrapy.png" alt="image">
+                <h4 class="title">Lorem, ipsum</h4>
+                <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium rerum necessitatibus aliquam. Ex, enim.</p>
+                <a href="https://www.github.com/" class="btn">Open repository</a>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+    <div id="courses" class="courses">
+
+        <h2 class="heading">Best Courses</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="images/scrapy.png" alt="image">
+                <h4 class="title">Lorem, ipsum</h4>
+                <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium rerum necessitatibus aliquam. Ex, enim.</p>
+                <a href="https://www.github.com/" class="btn">Open repository</a>
+            </div>
+            <div class="card">
+                <img src="images/scrapy.png" alt="image">
+                <h4 class="title">Lorem, ipsum</h4>
+                <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium rerum necessitatibus aliquam. Ex, enim.</p>
+                <a href="https://www.github.com/" class="btn">Open repository</a>
+            </div>
+            <div class="card">
+                <img src="images/scrapy.png" alt="image">
+                <h4 class="title">Lorem, ipsum</h4>
+                <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium rerum necessitatibus aliquam. Ex, enim.</p>
+                <a href="https://www.github.com/" class="btn">Open repository</a>
+            </div>
+            <div class="card">
+                <img src="images/scrapy.png" alt="image">
+                <h4 class="title">Lorem, ipsum</h4>
+                <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium rerum necessitatibus aliquam. Ex, enim.</p>
+                <a href="https://www.github.com/" class="btn">Open repository</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</body>
+</html>

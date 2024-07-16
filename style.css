@@ -1,0 +1,372 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=M+PLUS+Rounded+1c:wght@500&family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
+
+/* css reseting */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* navbar */
+
+.logo{
+    font-size: 1.68rem;
+    margin-right: 2.3rem;
+    margin-left: 1rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: white;
+    align-self: center;
+
+}
+
+.navbar{
+    background: black;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-items{
+    display: flex;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.checkbtn{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.nav-item{
+    padding-right: 6rem;
+    list-style: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.08rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.nav-items .icon {
+    display: none;
+}
+
+
+/* welcome */
+
+.welcome{
+    font-family: 'Cantarell', sans-serif;
+    display: flex;
+    padding: 20px;
+    padding-bottom: 1.6rem;
+    font-size: 2.3rem;
+    margin-top: 4rem;
+}
+
+
+/* user profile */
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badges, .past-courses{
+    width: 36rem;
+    height: 28rem;
+
+    background-color: rgb(211, 236, 255);
+    box-shadow: 10px 10px rgb(65, 65, 65);
+    border-radius: 6px;
+
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 5rem;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.badge-imgs, .past-course-imgs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.badge{
+    width: 7rem;
+    margin: 1rem;
+}
+.past-course{
+    margin: 1rem;
+    width: 5.6rem;
+}
+
+.charts{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.chart{
+    width:100%;
+    max-width:45rem;
+    margin-top: 3rem;
+    margin: auto;
+}
+
+
+/* headings */
+
+.heading{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3rem;
+    margin: auto;
+}
+
+
+/* projects and courses */
+
+.projects, .courses{
+    text-align: center;
+    padding: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    height: fit-content;
+    margin-top: 2rem;
+}
+
+.card{
+    font-family: 'Cantarell', sans-serif;
+    border: 2px solid black;
+
+    width: 25rem;
+    height: 25rem;
+
+    align-self: center;
+
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.card img{
+    margin-top: 1rem;
+    width: 12rem;
+}
+
+.title{
+    font-size: 1.7rem;
+}
+
+.desc{
+    font-weight: 500;
+    word-spacing: 1px;
+
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.btn{
+    width: 9rem;
+    border-radius: 5px;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+
+    background-color: rgb(138, 202, 255);
+    border: 1px solid rgb(110, 110, 110);
+    color: white;
+
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 1700px) {
+    .badge { width: 7rem; }
+}
+
+@media screen and (max-width: 1600px) {
+    .badge { width: 5.8rem;  }
+    .badges, .past-courses { height: 23rem; }
+}
+
+@media screen and (max-width: 1440px) {
+    .badge { width: 5.7rem; }
+
+    .past-course{ width: 5rem; }
+    .past-courses, .badges{ height: 27rem; }
+     
+    .card{ height: 25rem; }
+    .chart{ max-width: 35rem; }
+}
+
+@media screen and (max-width: 1240px) {
+
+    .heading{ font-size: 2rem; }
+    .title{ font-size: 1.4rem; }
+    .desc{ font-size: 1rem; }
+
+    .past-courses, .badges{ height: 27rem; }
+    .badge{ width: 4.3rem; }
+
+    .card{ height: 20rem; }
+    .card img{ width: 8rem; }
+
+    .chart{ max-width: 33rem; }
+
+    .btn{
+        width: 2rem;
+        font-size: 0.9rem;
+    }
+    .welcome{ font-size: 2rem; }
+}
+
+@media screen and (max-width:1130px) {
+    .user-profile{ flex-direction: column; }
+
+    .badge{ width: 6rem; }
+    .badges, .past-courses{
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .charts{ flex-direction: column; }
+    .card{
+        width: 25rem;
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .checkbtn{ display: block; }
+    .logo{
+        margin: 0.8rem 0;
+        margin-left: 0.5rem;
+    }
+
+    .nav-items{
+        flex-direction: column;
+        position: fixed;
+
+        width: 100%;
+        height: 100vh;
+
+        background: #000;
+        transition: all .5s;
+
+        top: 5rem;
+        left: -150%;
+
+        text-align: center;
+    }
+    .nav-item{
+        display: block;
+        margin: 2rem 0;
+    }
+    .nav-item a{ font-size: 2rem; }
+
+    #check:checked ~ ul{ left: 0; }
+}
+@media screen and (max-width:950px) {
+    .card{
+        width: 30rem;
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .badges, .past-courses{
+        width: 24rem;
+        height: 15rem;
+    }
+
+    .badge{ width: 4rem; }
+    .past-course{ width: 4rem; }
+
+    .badges h3, .past-courses h3{ font-size: 1.7rem; }
+}
+
+@media screen and (max-width:500px) {
+
+    .badges, .past-courses{
+        width: 16rem;
+        margin: 2rem 0;
+    }
+
+    .badge{ width: 3.3rem; }
+    .past-course{  width: 3rem; }
+
+    .courses, .projects{
+        width: 22rem;
+        margin: 2rem 0;
+    }
+
+    .container{
+        align-items: center;
+        margin: 0;
+    }
+
+    .charts{
+        margin: 0;
+        width: 21rem;
+        margin: auto;
+    }
+
+    .welcome{ font-size: 1rem; }
+
+    .checkbtn{ display: block; }
+
+    .nav-items{
+        position: fixed;
+
+        top: 80px;
+        left: -150%;
+
+        width: 100%;
+        height: 100vh;
+
+        background: #000;
+
+        transition: all .5s;
+        text-align: center;
+    }
+    .nav-item{
+        display: block;
+        margin: 2rem 0;
+    }
+    .nav-item a{ font-size: 2rem; }
+
+    #check:checked ~ ul{ left: 0; }
+}
